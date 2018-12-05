@@ -66,7 +66,7 @@ public class SalaryHandling {
             
             ConnectionClass.query("insert into salaryslip(sr, name, post, month, days, advance, deduction, net_salary, dt, gross_salary)" +
                  "values ("+ ssc.getId()+", '"+ ssc.getName()+"', '"+ ssc.getPost() +"', '"+ssc.getMonthName() +"', "+ ssc.getTotalWorkingDays()+","+ ssc.getAdvance()+
-                 ", "+ ssc.getDeduction() +" , " + ssc.getNetSalary() + " ,'" + ssc.getDt() + "' , " + ssc.getGross() +");");
+                 ", "+ ssc.getDeduction() +" , " + ssc.getNetSalary() + " ,'" + ssc.getDt() + "' , " + ssc.getGross() +")");
             
             ss.add(ssc);
             new SalarySlipDetail(null, true, ssc).setVisible(true);
@@ -118,7 +118,7 @@ public class SalaryHandling {
        try {
        Load();
              
-       ConnectionClass.query("DELETE FROM salaryslip WHERE sr = "+ ssc.getId() + ";");
+       ConnectionClass.query("DELETE FROM salaryslip WHERE sr = "+ ssc.getId() );
       
        }catch(Exception e)
        {
@@ -136,7 +136,7 @@ public class SalaryHandling {
        ConnectionClass.query("UPDATE salaryslip SET name = '" + ssc.getName()  + "', post = '"+ ssc.getPost() +
                "', month = '"+ ssc.getMonthName() + "', days = '" + ssc.getTotalWorkingDays()+ "', advance = '" + ssc.getAdvance()
                + "', deduction = '"+ ssc.getDeduction() + "', net_salary = '" + ssc.getNetSalary() + "', dt = '" + ssc.getDt()
-               +"', gross_salary = '" + ssc.getGross() +"'WHERE sr = " + ssc.getId() +" ;");
+               +"', gross_salary = '" + ssc.getGross() +"'WHERE sr = " + ssc.getId() );
        
        }catch(Exception e)
        {

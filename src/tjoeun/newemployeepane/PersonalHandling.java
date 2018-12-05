@@ -180,7 +180,7 @@ public class PersonalHandling {
        try {
 
             LoginHandling.DeleteRecord(pi1.getId());
-            ConnectionClass.query("DELETE FROM personalinfo WHERE id = "+ pi1.getId() + ";");
+            ConnectionClass.query("DELETE FROM personalinfo WHERE id = "+ pi1.getId() );
       
        for(int i=0; i<pi.size(); i++)
            if(pi.get(i).getId() == pi1.getId())
@@ -200,7 +200,7 @@ public class PersonalHandling {
        try {
        Load();
        for (int i = 0; i< pi.size(); i++){
-       ConnectionClass.query("DELETE FROM personalinfo WHERE id = "+ pi.get(i).getId() + ";");
+       ConnectionClass.query("DELETE FROM personalinfo WHERE id = "+ pi.get(i).getId() );
        }
        }catch(Exception e)
        {

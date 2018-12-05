@@ -56,7 +56,7 @@ public class DailyTaskHandling {
                  + dt.getAttndnc()+"', '"
                  +dt.getWork()+"', '"
                  +dt.getAssignDate()+"', '"
-                 +dt.getAssignStatus()+"');");
+                 +dt.getAssignStatus()+"')");
          dailylist.add(dt);
          }catch(IllegalArgumentException e){
              e.getMessage();
@@ -68,7 +68,7 @@ public class DailyTaskHandling {
    {
        try {
        Load();    
-       ConnectionClass.query("DELETE FROM dailwork WHERE sr = "+ dt.getId() + ";");
+       ConnectionClass.query("DELETE FROM dailwork WHERE sr = "+ dt.getId() );
        }catch(Exception e)
        {
         throw new IllegalArgumentException(e.getMessage());
@@ -80,7 +80,7 @@ public class DailyTaskHandling {
        try {
        Load();
        for (int i = 0; i< dailylist.size(); i++){
-       ConnectionClass.query("DELETE FROM personalinfo WHERE sr = "+ dailylist.get(i).getId() + ";");
+       ConnectionClass.query("DELETE FROM personalinfo WHERE sr = "+ dailylist.get(i).getId() );
        }
        }catch(Exception e)
        {
@@ -107,7 +107,7 @@ public class DailyTaskHandling {
                + "',work = '"
                + dt.getWork() 
                + "'WHERE sr = " 
-               + dt.getId() +" ;");
+               + dt.getId() );
        }catch(Exception e)
        {
           throw new IllegalArgumentException(e.getMessage());
