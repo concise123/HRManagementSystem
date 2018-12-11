@@ -96,7 +96,7 @@ public class NewEmployeePane extends javax.swing.JPanel {
         jLabel2.setText("사번 : ");
 
         jLabel3.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel3.setText("Full Name:");
+        jLabel3.setText("이름 :");
 
         jLabel4.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel4.setText("CNIC:");
