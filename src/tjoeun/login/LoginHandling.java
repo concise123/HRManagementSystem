@@ -98,7 +98,7 @@ public class LoginHandling {
        try {
            
         uniqueCheck(login);
-       ConnectionClass.query("Insert into gms.login (srno, id, pass, question, answer, name, status, date_time)\n" + "values ( "+login.getSr()+ 
+       ConnectionClass.query("Insert into login (srno, id, pass, question, answer, name, status, date_time)\n" + "values ( "+login.getSr()+ 
                ", '"+ login.getLogin()+"', '"
                + login.getPassword()+"','" + login.getQuestion()+ "', '" +login.getAnswer()+"', '" + login.getName()+"' , '"
                + login.getStatus()+ "','Not Available' )");
