@@ -30,7 +30,6 @@ public class DailyTask {
         setWork(work);
         setAssignDate(assignDate);
         setAssignStatus(assignStatus);
-        System.out.println("test");
     }
 
     public boolean setId(int id) {
