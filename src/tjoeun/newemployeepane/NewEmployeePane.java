@@ -102,7 +102,7 @@ public class NewEmployeePane extends javax.swing.JPanel {
         jLabel4.setText("CNIC:");
 
         jLabel5.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel5.setText("Phone: ");
+        jLabel5.setText("전화번호 : ");
 
         jLabel6.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel6.setText("Emal:");
