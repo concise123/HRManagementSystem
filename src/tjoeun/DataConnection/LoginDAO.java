@@ -38,7 +38,7 @@ BasicDataSource ds;
 			pstmt = con.prepareStatement(sql);
 			rs = pstmt.executeQuery();
 			
-			while(rs.next()) {
+			while(rs.next()) { //dd
 				Login_1 login1 = new Login_1();
 				login1.setSr(rs.getInt("srno"));
 				login1.setLogin(rs.getString("id"));
