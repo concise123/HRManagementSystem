@@ -25,9 +25,8 @@ public class Login_1 {
      private String status;
      private String dateTime;
     /* Constructor */
-    public Login_1( int sr, String login, String password, String question, String answer, String name, String status, String time)
+    public Login_1(String login, String password, String question, String answer, String name, String status, String time)
     {
-        setSr(sr);
         setLogin(login);
         setPassword(password);
         setQuestion(question);
@@ -35,7 +34,6 @@ public class Login_1 {
         setName(name);
         setStatus(status);
         setDateTime(time);
-        
     }
 
     public Login_1(String question, String ans) {

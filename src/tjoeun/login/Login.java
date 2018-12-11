@@ -37,7 +37,6 @@ public class Login extends javax.swing.JFrame {
         PasswordField = new javax.swing.JPasswordField();
         jButton1 = new javax.swing.JButton();
         forgotPasswordButton = new javax.swing.JButton();
-        forgotPasswordButton1 = new javax.swing.JButton();
         jSeparator1 = new javax.swing.JSeparator();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -83,16 +82,6 @@ public class Login extends javax.swing.JFrame {
             }
         });
 
-        forgotPasswordButton1.setBackground(new java.awt.Color(255, 255, 255));
-        forgotPasswordButton1.setFont(new java.awt.Font("NanumGothic", 1, 14)); // NOI18N
-        forgotPasswordButton1.setText("닫기");
-        forgotPasswordButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        forgotPasswordButton1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                forgotPasswordButton1ActionPerformed(evt);
-            }
-        });
-
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -101,8 +90,7 @@ public class Login extends javax.swing.JFrame {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                        .addGap(0, 0, Short.MAX_VALUE)
-                        .addComponent(forgotPasswordButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(0, 0, Short.MAX_VALUE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(100, 100, 100)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -112,7 +100,7 @@ public class Login extends javax.swing.JFrame {
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addComponent(forgotPasswordButton)
-                                .addGap(18, 18, 18)
+                                .addGap(51, 51, 51)
                                 .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 102, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addComponent(PasswordField)
                             .addComponent(usernameTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 283, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -135,12 +123,11 @@ public class Login extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel3)
                     .addComponent(PasswordField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
+                .addGap(40, 40, 40)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(forgotPasswordButton, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addComponent(forgotPasswordButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(22, 22, 22)
                 .addGap(18, 18, 18))
         );
 
@@ -163,9 +150,6 @@ public class Login extends javax.swing.JFrame {
         access();
     }//GEN-LAST:event_jButton1ActionPerformed
 
-    private void forgotPasswordButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_forgotPasswordButton1ActionPerformed
-        System.exit(0);
-    }//GEN-LAST:event_forgotPasswordButton1ActionPerformed
 
     private void forgotPasswordButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_forgotPasswordButtonActionPerformed
         this.setVisible(false);
@@ -185,11 +169,15 @@ public class Login extends javax.swing.JFrame {
            JOptionPane.showMessageDialog(null, "아이디 또는 비밀번호를 잘못 입력하셨습니다.");
     
     }
+    
+    public void resetTextField() {
+    	usernameTextField.setText("");
+    	PasswordField.setText("");
+    }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPasswordField PasswordField;
     private javax.swing.JButton forgotPasswordButton;
-    private javax.swing.JButton forgotPasswordButton1;
     private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;

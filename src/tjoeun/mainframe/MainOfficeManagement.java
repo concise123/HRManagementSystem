@@ -341,6 +341,7 @@ public class MainOfficeManagement extends javax.swing.JFrame {
 
     private void goBackButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_goBackButtonActionPerformed
         login.setVisible(true);
+        login.resetTextField();
         this.dispose();
     }//GEN-LAST:event_goBackButtonActionPerformed
 

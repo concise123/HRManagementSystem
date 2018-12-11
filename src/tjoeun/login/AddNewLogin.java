@@ -13,6 +13,7 @@ package tjoeun.login;
 
 import java.awt.Color;
 import java.awt.HeadlessException;
+import java.util.regex.Pattern;
 import javax.swing.JOptionPane;
 /*
  * @version 1.10 25 Aug 2017
@@ -28,7 +29,6 @@ public class AddNewLogin extends javax.swing.JPanel {
         initComponents();
         setBackground(Color.white);
         LoginHandling.load();
-        idTextField.setText(LoginHandling.LoginID()+"");
     }
 
     
@@ -36,8 +36,6 @@ public class AddNewLogin extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        idTextField = new javax.swing.JTextField();
-        jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         username = new javax.swing.JTextField();
         jLabel4 = new javax.swing.JLabel();
@@ -56,13 +54,6 @@ public class AddNewLogin extends javax.swing.JPanel {
         jLabel5 = new javax.swing.JLabel();
 
         setPreferredSize(new java.awt.Dimension(1359, 675));
-
-        idTextField.setEditable(false);
-        idTextField.setFont(new java.awt.Font("NanumGothic", 0, 14)); // NOI18N
-        idTextField.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-
-        jLabel2.setFont(new java.awt.Font("NanumGothic", 1, 14)); // NOI18N
-        jLabel2.setText("고유 번호: ");
 
         jLabel3.setFont(new java.awt.Font("NanumGothic", 1, 14)); // NOI18N
         jLabel3.setText("아이디:");
@@ -147,7 +138,6 @@ public class AddNewLogin extends javax.swing.JPanel {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel2)
                             .addComponent(jLabel3)
                             .addComponent(jLabel7)
                             .addComponent(jLabel12))
@@ -157,8 +147,7 @@ public class AddNewLogin extends javax.swing.JPanel {
                                 .addComponent(questincombo, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addComponent(answertf, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 254, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                .addComponent(username)
-                                .addComponent(idTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 254, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                .addComponent(username, javax.swing.GroupLayout.PREFERRED_SIZE, 254, javax.swing.GroupLayout.PREFERRED_SIZE))))
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel8)
@@ -174,10 +163,7 @@ public class AddNewLogin extends javax.swing.JPanel {
                         .addGap(348, 348, 348)
                         .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addContainerGap(51, Short.MAX_VALUE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(Save, javax.swing.GroupLayout.PREFERRED_SIZE, 271, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(148, 148, 148))))
+                    .addComponent(Save, javax.swing.GroupLayout.PREFERRED_SIZE, 271, javax.swing.GroupLayout.PREFERRED_SIZE)))
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabel1)
@@ -188,12 +174,10 @@ public class AddNewLogin extends javax.swing.JPanel {
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabel1)
-                .addGap(117, 117, 117)
+                .addGap(77, 77, 77)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel2)
-                            .addComponent(idTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE))
                         .addGap(45, 45, 45)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(username, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -215,31 +199,54 @@ public class AddNewLogin extends javax.swing.JPanel {
                             .addComponent(passwordtf, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel9)))
                     .addComponent(jPanel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(50, 50, 50)
+                .addGap(15, 15, 15)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel4)
                     .addComponent(statusComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(98, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGap(50, 50, 50)
                 .addComponent(Save, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(81, 81, 81))
+                .addContainerGap(98, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
-    private void SaveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SaveActionPerformed
-        try {
-            LoginHandling.save(getData());
-            JOptionPane.showMessageDialog(null,"정상적으로 처리되었습니다.");
-        }catch (HeadlessException e) {
-            JOptionPane.showMessageDialog(null, "에러가 발생하였습니다.");
-        }
+    protected Boolean validityCheck() {
+    	if(!Pattern.matches("^[a-zA-Z0-9]{4,9}$", username.getText())) {
+    		JOptionPane.showMessageDialog(null, "아이디는 영문자 또는 숫자만 사용 가능합니다. (5자 이상 10자 이내)");
+    	} else if(answertf.getText().equals("")) {
+    		JOptionPane.showMessageDialog(null, "답을 입력해주십시오.");
+    	} else if(fullnametf.getText().equals("")) {
+    		JOptionPane.showMessageDialog(null, "성명을 입력해주십시오.");	
+    	} else if(passwordtf.getText().equals("")) {
+    		JOptionPane.showMessageDialog(null, "비밀번호를 입력해주십시오.");
+    	} else {
+    		try {
+    	           if(LoginHandling.idDuplicateCheck(username.getText())) {
+    	        	   JOptionPane.showMessageDialog(null, "\"" + username.getText() + "\"는 중복되는 아이디 입니다.");
+    	        	   username.setText("");
+    	           } else {
+    	        	   return true;
+    	           }
+    	        }catch (HeadlessException e) {
+    	            e.printStackTrace();
+    	        }
+    	} 
+    	return false;
+	}
+
+	private void SaveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SaveActionPerformed
+      if(validityCheck()) {
+    	  try {
+              LoginHandling.save(getData());
+              JOptionPane.showMessageDialog(null,"정상적으로 처리되었습니다.");
+          }catch (HeadlessException e) {
+              JOptionPane.showMessageDialog(null, "에러가 발생하였습니다.");
+          }
+      }
     }//GEN-LAST:event_SaveActionPerformed
     
     public Login_1 getData()
     {
         
-        int id = Integer.parseInt(idTextField.getText());
         String name = fullnametf.getText();
         String user = username.getText();
         String pass = passwordtf.getText();
@@ -248,7 +255,7 @@ public class AddNewLogin extends javax.swing.JPanel {
         String ans = answertf.getText();
         
         java.util.Calendar cal = new java.util.GregorianCalendar();
-        return new Login_1(id, user, pass, qstn, ans, name, status, cal.getTime().toString());
+        return new Login_1(user, pass, qstn, ans, name, status, cal.getTime().toString());
         
     }
 
@@ -256,10 +263,8 @@ public class AddNewLogin extends javax.swing.JPanel {
     private javax.swing.JButton Save;
     private javax.swing.JTextField answertf;
     private javax.swing.JTextField fullnametf;
-    private javax.swing.JTextField idTextField;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel12;
-    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;

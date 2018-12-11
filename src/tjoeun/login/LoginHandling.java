@@ -14,6 +14,7 @@ package tjoeun.login;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
+import java.util.Iterator;
 
 import tjoeun.DataConnection.ConnectionClass;
 /**
@@ -66,16 +67,16 @@ public class LoginHandling {
        return "";
    }
    /* Reseting the password */
-   public static boolean resetMyPassword(String userName, String answer, String newPassword)
+   public static boolean resetMyPassword(String userName, String question, String answer, String newPassword)
    {
+	   load();
        for(int i=0; i< loginList.size(); i++)
-           if(loginList.get(i).getLogin().equals(userName))
+           if(loginList.get(i).getLogin().equals(userName) && 
+        		   loginList.get(i).getQuestion().equals(question) && 
+        		   loginList.get(i).getAnswer().toUpperCase().equals(answer.toUpperCase()))
            {
-               if(loginList.get(i).getAnswer().toUpperCase().equals(answer.toUpperCase()))
-               {
                    UpdateRecord(userName, loginList.get(i).getPassword(),  newPassword);
                    return true;
-               }
            }
        return false;
    }
@@ -85,7 +86,7 @@ public class LoginHandling {
        try {
            
         uniqueCheck(login);
-       ConnectionClass.query("Insert into login (srno, id, pass, question, answer, name, status, date_time)\n" + "values ( "+login.getSr()+ 
+       ConnectionClass.query("Insert into login (srno, id, pass, question, answer, name, status, date_time)\n" + "values ( login_seq.nextval" + 
                ", '"+ login.getLogin()+"', '"
                + login.getPassword()+"','" + login.getQuestion()+ "', '" +login.getAnswer()+"', '" + login.getName()+"' , '"
                + login.getStatus()+ "','Not Available' )");
@@ -206,5 +207,15 @@ public class LoginHandling {
     {
        return loginList;
     }
+    
+	public static boolean idDuplicateCheck(String id) { // 아이디 중복 체크
+			load();
+			Iterator<Login_1> itr = loginList.iterator();
+			for(Login_1 dto : loginList) {
+				if(dto.getLogin().equals(id))
+					return true;
+			}
+			return false;
+	}
 }
 

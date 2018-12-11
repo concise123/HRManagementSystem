@@ -60,7 +60,8 @@ CREATE TABLE login (
   date_time varchar2(45) DEFAULT NULL,
   PRIMARY KEY (srno)
 );
-
+delete from login;
+create sequence login_seq start with 1 increment BY 1;
 select * from tab;
 select * from login;
 -- -- /*!40101 SET character_set_client = @saved_cs_client */;
@@ -71,10 +72,10 @@ select * from login;
 
 -- LOCK TABLES login WRITE;
 -- -- /*!40000 ALTER TABLE login DISABLE KEYS */;
-INSERT INTO login VALUES (1,'manager','1234','What is your dream?','Being a successfull Programmer','manager','Admin','Wed Jan 18 21:08:40 PST 2017');
+INSERT INTO login VALUES (login_seq.nextval,'manager','1234','당신의 좌우명은?','Being a successfull Programmer','manager','Admin','Wed Jan 18 21:08:40 PST 2017');
 -- -- /*!40000 ALTER TABLE login ENABLE KEYS */;
 -- UNLOCK TABLES;
-
+--commit;
 --
 -- Table structure for table personalinfo
 --

@@ -45,14 +45,13 @@ public class ForgotPassword extends javax.swing.JDialog {
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
-        questionLabel = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
         usernameTextField = new javax.swing.JTextField();
+        questioncombo = new javax.swing.JComboBox<>();
         answerTextField = new javax.swing.JTextField();
         passwordField = new javax.swing.JPasswordField();
         submitButton = new javax.swing.JButton();
         closeButton = new javax.swing.JButton();
-        searchButton = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
@@ -80,13 +79,15 @@ public class ForgotPassword extends javax.swing.JDialog {
         jLabel5.setFont(new java.awt.Font("NanumGothic", 0, 18)); // NOI18N
         jLabel5.setText("질문:");
 
-        questionLabel.setFont(new java.awt.Font("NanumGothic", 2, 20)); // NOI18N
-
         jLabel7.setFont(new java.awt.Font("NanumGothic", 0, 18)); // NOI18N
         jLabel7.setText("새 비밀번호:");
 
         usernameTextField.setFont(new java.awt.Font("NanumGothic", 0, 18)); // NOI18N
         usernameTextField.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        
+        questioncombo.setFont(new java.awt.Font("NanumGothic", 0, 13)); // NOI18N
+        questioncombo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] {"당신의 좌우명은?", "기억에 남는 추억의 장소는?", "가장 기억에 남는 선생님 성함은?" }));
+        questioncombo.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
         answerTextField.setFont(new java.awt.Font("NanumGothic", 0, 18)); // NOI18N
         answerTextField.setHorizontalAlignment(javax.swing.JTextField.CENTER);
@@ -116,16 +117,6 @@ public class ForgotPassword extends javax.swing.JDialog {
             }
         });
 
-        searchButton.setBackground(new java.awt.Color(255, 255, 255));
-        searchButton.setFont(new java.awt.Font("NanumGothic", 0, 16)); // NOI18N
-        searchButton.setText("검색");
-        searchButton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        searchButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                searchButtonActionPerformed(evt);
-            }
-        });
-
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -139,7 +130,7 @@ public class ForgotPassword extends javax.swing.JDialog {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(jLabel1))
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(43, 43, 43)
+                        .addGap(143, 143, 143)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel5)
                             .addComponent(jLabel3)
@@ -149,19 +140,20 @@ public class ForgotPassword extends javax.swing.JDialog {
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(questionLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 499, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(questioncombo, javax.swing.GroupLayout.PREFERRED_SIZE, 412, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                                         .addComponent(passwordField, javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addComponent(answerTextField, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 412, Short.MAX_VALUE)))
+                                        .addComponent(answerTextField, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 412, Short.MAX_VALUE)
+                                        .addGroup(jPanel1Layout.createSequentialGroup()
+                                            	.addComponent(submitButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                            	.addGap(50, 50, 50)
+                                	            .addComponent(closeButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
                                 .addGap(0, 125, Short.MAX_VALUE))
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addComponent(usernameTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 412, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(searchButton, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(12, 12, 12)
                                 .addGap(12, 12, 12)))))
                 .addContainerGap())
-            .addComponent(submitButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(closeButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -172,15 +164,14 @@ public class ForgotPassword extends javax.swing.JDialog {
                     .addComponent(jLabel1))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(81, 81, 81)
+                .addGap(20, 20, 20)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel3)
-                    .addComponent(usernameTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(searchButton, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(usernameTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(42, 42, 42)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel5)
-                    .addComponent(questionLabel))
+                    .addComponent(questioncombo))
                 .addGap(46, 46, 46)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel4)
@@ -190,10 +181,11 @@ public class ForgotPassword extends javax.swing.JDialog {
                     .addComponent(jLabel7)
                     .addComponent(passwordField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 40, Short.MAX_VALUE)
-                .addComponent(submitButton, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(closeButton, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(7, 7, 7))
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+	                .addComponent(submitButton, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
+	                .addGap(7, 7, 7)
+	                .addComponent(closeButton, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(20, 20, 20))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -212,8 +204,8 @@ public class ForgotPassword extends javax.swing.JDialog {
     }// </editor-fold>//GEN-END:initComponents
 
     private void submitButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_submitButtonActionPerformed
-        try{
-            if(LoginHandling.resetMyPassword(usernameTextField.getText(), 
+    	try{
+            	if(LoginHandling.resetMyPassword(usernameTextField.getText(), questioncombo.getSelectedItem().toString(),
                     answerTextField.getText(), passwordField.getText()))
             {
                 JOptionPane.showMessageDialog(null, "비밀번호를 성공적으로 변경하였습니다.");
@@ -225,10 +217,6 @@ public class ForgotPassword extends javax.swing.JDialog {
             JOptionPane.showMessageDialog(null, e.getMessage());
         }
     }//GEN-LAST:event_submitButtonActionPerformed
-
-    private void searchButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_searchButtonActionPerformed
-        questionLabel.setText(LoginHandling.getQuestion(usernameTextField.getText()));
-    }//GEN-LAST:event_searchButtonActionPerformed
 
     private void closeButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_closeButtonActionPerformed
         login.setVisible(true);
@@ -247,8 +235,7 @@ public class ForgotPassword extends javax.swing.JDialog {
     private javax.swing.JPanel jPanel1;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JPasswordField passwordField;
-    private javax.swing.JLabel questionLabel;
-    private javax.swing.JButton searchButton;
+    private javax.swing.JComboBox<String> questioncombo;
     private javax.swing.JButton submitButton;
     private javax.swing.JTextField usernameTextField;
     // End of variables declaration//GEN-END:variables
