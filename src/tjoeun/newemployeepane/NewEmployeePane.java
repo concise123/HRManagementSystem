@@ -132,8 +132,8 @@ public class NewEmployeePane extends javax.swing.JPanel {
         emailTextField.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         emailTextField.setHorizontalAlignment(javax.swing.JTextField.CENTER);
 
-        jLabel13.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel13.setText("Address:");
+        jLabel13.setFont(new java.awt.Font("NanumGothic", 1, 14)); // NOI18N
+        jLabel13.setText("회사 주소:");
 
         dobDayCombo.setFont(new java.awt.Font("Tahoma", 0, 13)); // NOI18N
         dobDayCombo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Day", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31" }));

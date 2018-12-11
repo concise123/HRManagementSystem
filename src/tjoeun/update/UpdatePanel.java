@@ -51,7 +51,7 @@ public class UpdatePanel extends javax.swing.JPanel {
 
         jLabel1.setFont(new java.awt.Font("NanumGothic", 1, 20)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(0, 102, 204));
-        jLabel1.setText("사원 정보 관리");
+        jLabel1.setText("사원 관리");
         jLabel1.setToolTipText("");
 
         updateEmployeeButton.setBackground(new java.awt.Color(255, 255, 255));
