@@ -42,6 +42,10 @@ public class Login_1 {
         setQuestion(question);
         setAnswer(ans);
     }
+    public Login_1() {
+        
+    }//dd
+    
     
     public void setDateTime(String time)
     {
