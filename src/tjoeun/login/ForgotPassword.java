@@ -58,46 +58,46 @@ public class ForgotPassword extends javax.swing.JDialog {
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
 
-        jLabel1.setFont(new java.awt.Font("Tahoma", 0, 22)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("NanumGothic", 0, 22)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(0, 51, 153));
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/tjoeun/images/sad-face.png"))); // NOI18N
-        jLabel1.setText("  Hey! Please Recover Me. ");
+        jLabel1.setText("  비밀번호 변경");
 
-        jLabel2.setFont(new java.awt.Font("Trebuchet MS", 0, 46)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("NanumGothic", 0, 46)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(0, 51, 153));
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/tjoeun/images/1.png"))); // NOI18N
-        jLabel2.setText(" GMS   ");
+        jLabel2.setText(" 더조은 HRMS");
 
         jSeparator1.setForeground(new java.awt.Color(0, 0, 153));
-        jSeparator1.setFont(new java.awt.Font("Tahoma", 0, 283832)); // NOI18N
+        jSeparator1.setFont(new java.awt.Font("NanumGothic", 0, 283832)); // NOI18N
 
-        jLabel3.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jLabel3.setText("Enter Username:");
+        jLabel3.setFont(new java.awt.Font("NanumGothic", 0, 18)); // NOI18N
+        jLabel3.setText("아이디:");
 
-        jLabel4.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jLabel4.setText("Enter Your Answer:");
+        jLabel4.setFont(new java.awt.Font("NanumGothic", 0, 18)); // NOI18N
+        jLabel4.setText("답:");
 
-        jLabel5.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jLabel5.setText("Your Security Question:");
+        jLabel5.setFont(new java.awt.Font("NanumGothic", 0, 18)); // NOI18N
+        jLabel5.setText("질문:");
 
-        questionLabel.setFont(new java.awt.Font("Tahoma", 2, 20)); // NOI18N
+        questionLabel.setFont(new java.awt.Font("NanumGothic", 2, 20)); // NOI18N
 
-        jLabel7.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jLabel7.setText("Enter New Password:");
+        jLabel7.setFont(new java.awt.Font("NanumGothic", 0, 18)); // NOI18N
+        jLabel7.setText("새 비밀번호:");
 
-        usernameTextField.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        usernameTextField.setFont(new java.awt.Font("NanumGothic", 0, 18)); // NOI18N
         usernameTextField.setHorizontalAlignment(javax.swing.JTextField.CENTER);
 
-        answerTextField.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        answerTextField.setFont(new java.awt.Font("NanumGothic", 0, 18)); // NOI18N
         answerTextField.setHorizontalAlignment(javax.swing.JTextField.CENTER);
 
-        passwordField.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        passwordField.setFont(new java.awt.Font("NanumGothic", 0, 18)); // NOI18N
         passwordField.setHorizontalAlignment(javax.swing.JTextField.CENTER);
 
         submitButton.setBackground(new java.awt.Color(255, 255, 255));
-        submitButton.setFont(new java.awt.Font("Tahoma", 0, 20)); // NOI18N
+        submitButton.setFont(new java.awt.Font("NanumGothic", 0, 20)); // NOI18N
         submitButton.setForeground(new java.awt.Color(0, 102, 0));
-        submitButton.setText("Submit");
+        submitButton.setText("변경");
         submitButton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         submitButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -106,9 +106,9 @@ public class ForgotPassword extends javax.swing.JDialog {
         });
 
         closeButton.setBackground(new java.awt.Color(255, 255, 255));
-        closeButton.setFont(new java.awt.Font("Tahoma", 0, 20)); // NOI18N
+        closeButton.setFont(new java.awt.Font("NanumGothic", 0, 20)); // NOI18N
         closeButton.setForeground(new java.awt.Color(153, 0, 0));
-        closeButton.setText("Cancel");
+        closeButton.setText("취소");
         closeButton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         closeButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -117,8 +117,8 @@ public class ForgotPassword extends javax.swing.JDialog {
         });
 
         searchButton.setBackground(new java.awt.Color(255, 255, 255));
-        searchButton.setFont(new java.awt.Font("Tahoma", 0, 16)); // NOI18N
-        searchButton.setText("Search");
+        searchButton.setFont(new java.awt.Font("NanumGothic", 0, 16)); // NOI18N
+        searchButton.setText("검색");
         searchButton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         searchButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -216,11 +216,11 @@ public class ForgotPassword extends javax.swing.JDialog {
             if(LoginHandling.resetMyPassword(usernameTextField.getText(), 
                     answerTextField.getText(), passwordField.getText()))
             {
-                JOptionPane.showMessageDialog(null, "Password Reset Successfully.");
+                JOptionPane.showMessageDialog(null, "비밀번호를 성공적으로 변경하였습니다.");
                 closeButtonActionPerformed(null);
             }
             else
-                JOptionPane.showMessageDialog(null, "Cann't Reset.");
+                JOptionPane.showMessageDialog(null, "일치하는 정보가 없습니다.");
         }catch(HeadlessException e){
             JOptionPane.showMessageDialog(null, e.getMessage());
         }

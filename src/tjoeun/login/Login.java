@@ -44,26 +44,26 @@ public class Login extends javax.swing.JFrame {
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
 
-        jLabel1.setFont(new java.awt.Font("Trajan Pro", 1, 22)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("NanumGothic", 1, 22)); // NOI18N
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/tjoeun/images/1.png"))); // NOI18N
-        jLabel1.setText("            Game Mark Studio");
+        jLabel1.setText("                더조은 HRMS");
 
-        jLabel2.setFont(new java.awt.Font("Tahoma", 0, 19)); // NOI18N
-        jLabel2.setText("Username:");
+        jLabel2.setFont(new java.awt.Font("NanumGothic", 0, 19)); // NOI18N
+        jLabel2.setText("아이디:");
 
-        jLabel3.setFont(new java.awt.Font("Tahoma", 0, 19)); // NOI18N
-        jLabel3.setText("Password:");
+        jLabel3.setFont(new java.awt.Font("NanumGothic", 0, 19)); // NOI18N
+        jLabel3.setText("비밀번호:");
 
-        usernameTextField.setFont(new java.awt.Font("Tahoma", 0, 16)); // NOI18N
+        usernameTextField.setFont(new java.awt.Font("NanumGothic", 0, 16)); // NOI18N
         usernameTextField.setHorizontalAlignment(javax.swing.JTextField.CENTER);
 
-        PasswordField.setFont(new java.awt.Font("Tahoma", 0, 16)); // NOI18N
+        PasswordField.setFont(new java.awt.Font("NanumGothic", 0, 16)); // NOI18N
         PasswordField.setHorizontalAlignment(javax.swing.JTextField.CENTER);
 
         jButton1.setBackground(new java.awt.Color(255, 255, 255));
-        jButton1.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jButton1.setFont(new java.awt.Font("NanumGothic", 1, 14)); // NOI18N
         jButton1.setForeground(new java.awt.Color(0, 102, 0));
-        jButton1.setText("Login");
+        jButton1.setText("로그인");
         jButton1.setToolTipText("");
         jButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -73,9 +73,9 @@ public class Login extends javax.swing.JFrame {
         });
 
         forgotPasswordButton.setBackground(new java.awt.Color(255, 255, 255));
-        forgotPasswordButton.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        forgotPasswordButton.setFont(new java.awt.Font("NanumGothic", 1, 14)); // NOI18N
         forgotPasswordButton.setForeground(new java.awt.Color(153, 0, 0));
-        forgotPasswordButton.setText("Forgot Password ?");
+        forgotPasswordButton.setText("비밀번호 변경");
         forgotPasswordButton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         forgotPasswordButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -84,8 +84,8 @@ public class Login extends javax.swing.JFrame {
         });
 
         forgotPasswordButton1.setBackground(new java.awt.Color(255, 255, 255));
-        forgotPasswordButton1.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        forgotPasswordButton1.setText("Close");
+        forgotPasswordButton1.setFont(new java.awt.Font("NanumGothic", 1, 14)); // NOI18N
+        forgotPasswordButton1.setText("닫기");
         forgotPasswordButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         forgotPasswordButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -182,7 +182,7 @@ public class Login extends javax.swing.JFrame {
           
         }
         else 
-           JOptionPane.showMessageDialog(null, "Invalid Username or Password");
+           JOptionPane.showMessageDialog(null, "아이디 또는 비밀번호를 잘못 입력하셨습니다.");
     
     }
 

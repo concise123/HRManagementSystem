@@ -58,55 +58,55 @@ public class AddNewLogin extends javax.swing.JPanel {
         setPreferredSize(new java.awt.Dimension(1359, 675));
 
         idTextField.setEditable(false);
-        idTextField.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        idTextField.setFont(new java.awt.Font("NanumGothic", 0, 14)); // NOI18N
         idTextField.setHorizontalAlignment(javax.swing.JTextField.CENTER);
 
-        jLabel2.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel2.setText("ID: ");
+        jLabel2.setFont(new java.awt.Font("NanumGothic", 1, 14)); // NOI18N
+        jLabel2.setText("고유 번호: ");
 
-        jLabel3.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel3.setText("User Name:");
+        jLabel3.setFont(new java.awt.Font("NanumGothic", 1, 14)); // NOI18N
+        jLabel3.setText("아이디:");
 
-        username.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        username.setFont(new java.awt.Font("NanumGothic", 0, 14)); // NOI18N
         username.setHorizontalAlignment(javax.swing.JTextField.CENTER);
 
-        jLabel4.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel4.setText("Status:");
+        jLabel4.setFont(new java.awt.Font("NanumGothic", 1, 14)); // NOI18N
+        jLabel4.setText("권한:");
 
-        jLabel7.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel7.setText("Security Question:");
+        jLabel7.setFont(new java.awt.Font("NanumGothic", 1, 14)); // NOI18N
+        jLabel7.setText("질문:");
 
-        questincombo.setFont(new java.awt.Font("Tahoma", 0, 13)); // NOI18N
-        questincombo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "What is your dream?", "Whtat's your PET name?", "What's your school teacher name?" }));
+        questincombo.setFont(new java.awt.Font("NanumGothic", 0, 13)); // NOI18N
+        questincombo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "당신의 좌우명은?", "기억에 남는 추억의 장소는?", "가장 기억에 남는 선생님 성함은?" }));
         questincombo.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
-        answertf.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        answertf.setFont(new java.awt.Font("NanumGothic", 0, 14)); // NOI18N
         answertf.setHorizontalAlignment(javax.swing.JTextField.CENTER);
 
-        passwordtf.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        passwordtf.setFont(new java.awt.Font("NanumGothic", 0, 14)); // NOI18N
         passwordtf.setHorizontalAlignment(javax.swing.JTextField.CENTER);
 
-        fullnametf.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        fullnametf.setFont(new java.awt.Font("NanumGothic", 0, 14)); // NOI18N
         fullnametf.setHorizontalAlignment(javax.swing.JTextField.CENTER);
 
-        jLabel8.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel8.setText("Full Name:");
+        jLabel8.setFont(new java.awt.Font("NanumGothic", 1, 14)); // NOI18N
+        jLabel8.setText("성명:");
 
-        jLabel9.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel9.setText("Password:");
+        jLabel9.setFont(new java.awt.Font("NanumGothic", 1, 14)); // NOI18N
+        jLabel9.setText("비밀번호:");
 
-        jLabel12.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel12.setText("Security Answer:");
+        jLabel12.setFont(new java.awt.Font("NanumGothic", 1, 14)); // NOI18N
+        jLabel12.setText("답:");
 
-        jLabel1.setFont(new java.awt.Font("Tahoma", 1, 20)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("NanumGothic", 1, 20)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(0, 102, 204));
-        jLabel1.setText("Add New Login ");
+        jLabel1.setText("회원 가입 ");
         jLabel1.setToolTipText("");
 
         Save.setBackground(new java.awt.Color(255, 255, 255));
-        Save.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
+        Save.setFont(new java.awt.Font("NanumGothic", 0, 18)); // NOI18N
         Save.setForeground(new java.awt.Color(0, 153, 0));
-        Save.setText("Save");
+        Save.setText("등록");
         Save.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         Save.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -114,8 +114,8 @@ public class AddNewLogin extends javax.swing.JPanel {
             }
         });
 
-        statusComboBox.setFont(new java.awt.Font("Tahoma", 0, 13)); // NOI18N
-        statusComboBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Employee", "Admin" }));
+        statusComboBox.setFont(new java.awt.Font("NanumGothic", 0, 13)); // NOI18N
+        statusComboBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "회원", "관리자" }));
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
 
@@ -230,9 +230,9 @@ public class AddNewLogin extends javax.swing.JPanel {
     private void SaveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SaveActionPerformed
         try {
             LoginHandling.save(getData());
-            JOptionPane.showMessageDialog(null,"Record Saved.");
+            JOptionPane.showMessageDialog(null,"정상적으로 처리되었습니다.");
         }catch (HeadlessException e) {
-            JOptionPane.showMessageDialog(null, "Not Saved something went wrong.");
+            JOptionPane.showMessageDialog(null, "에러가 발생하였습니다.");
         }
     }//GEN-LAST:event_SaveActionPerformed
     

@@ -195,9 +195,9 @@ public class MainOfficeManagement extends javax.swing.JFrame {
         });
 
         goBackButton.setBackground(new java.awt.Color(255, 255, 255));
-        goBackButton.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        goBackButton.setFont(new java.awt.Font("NanumGothic", 0, 18)); // NOI18N
         goBackButton.setForeground(new java.awt.Color(102, 0, 0));
-        goBackButton.setText("Logout");
+        goBackButton.setText("로그아웃");
         goBackButton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         goBackButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -206,8 +206,8 @@ public class MainOfficeManagement extends javax.swing.JFrame {
         });
 
         LoginButton.setBackground(new java.awt.Color(255, 255, 255));
-        LoginButton.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        LoginButton.setText("Login");
+        LoginButton.setFont(new java.awt.Font("NanumGothic", 0, 18)); // NOI18N
+        LoginButton.setText("회원가입");
         LoginButton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         LoginButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
