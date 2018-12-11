@@ -48,9 +48,9 @@ public class SearchEmployee extends javax.swing.JPanel {
 
         setBackground(new java.awt.Color(255, 255, 255));
 
-        jLabel1.setFont(new java.awt.Font("Tahoma", 1, 20)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("NanumGothic", 1, 20)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(0, 102, 204));
-        jLabel1.setText("Search Employee");
+        jLabel1.setText("사원 정보 검색");
         jLabel1.setToolTipText("");
 
         searchTextField.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
@@ -75,7 +75,7 @@ public class SearchEmployee extends javax.swing.JPanel {
 
             },
             new String [] {
-                "ID", "Full Name", "Phone", "Address", "Cnic", "Emergency Name", "Emergency Phone", "Date of Birth", "Email", "Position", "Date of Hiring", "Salary"
+                "사번", "이름", "전화번호", "주소", "생년월일", "Email", "직위", "생년월일", "급여"
             }
         ) {
             Class[] types = new Class [] {

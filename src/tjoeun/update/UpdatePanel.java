@@ -49,14 +49,14 @@ public class UpdatePanel extends javax.swing.JPanel {
 
         setBackground(new java.awt.Color(255, 255, 255));
 
-        jLabel1.setFont(new java.awt.Font("Tahoma", 1, 20)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("NanumGothic", 1, 20)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(0, 102, 204));
-        jLabel1.setText("Update");
+        jLabel1.setText("사원 정보 관리");
         jLabel1.setToolTipText("");
 
         updateEmployeeButton.setBackground(new java.awt.Color(255, 255, 255));
-        updateEmployeeButton.setFont(new java.awt.Font("Tahoma", 0, 22)); // NOI18N
-        updateEmployeeButton.setText("Update Employee");
+        updateEmployeeButton.setFont(new java.awt.Font("NanumGothic", 0, 22)); // NOI18N
+        updateEmployeeButton.setText("사원 정보 관리");
         updateEmployeeButton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         updateEmployeeButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -65,9 +65,9 @@ public class UpdatePanel extends javax.swing.JPanel {
         });
 
         changePasswordButton.setBackground(new java.awt.Color(255, 255, 255));
-        changePasswordButton.setFont(new java.awt.Font("Tahoma", 0, 22)); // NOI18N
+        changePasswordButton.setFont(new java.awt.Font("NanumGothic", 0, 22)); // NOI18N
         changePasswordButton.setForeground(new java.awt.Color(0, 102, 51));
-        changePasswordButton.setText("Change Password");
+        changePasswordButton.setText("비밀번호 변경");
         changePasswordButton.setToolTipText("");
         changePasswordButton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         changePasswordButton.addActionListener(new java.awt.event.ActionListener() {

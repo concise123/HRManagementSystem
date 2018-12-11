@@ -87,43 +87,34 @@ public class NewEmployeePane extends javax.swing.JPanel {
 
         setBackground(new java.awt.Color(255, 255, 255));
 
-        jLabel1.setFont(new java.awt.Font("Tahoma", 1, 20)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("NanumGothic", 1, 20)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(0, 102, 204));
-        jLabel1.setText("New Employee");
+        jLabel1.setText("사원 등록");
         jLabel1.setToolTipText("");
 
-        jLabel2.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("NanumGothic", 1, 14)); // NOI18N
         jLabel2.setText("사번 : ");
 
-        jLabel3.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("NanumGothic", 1, 14)); // NOI18N
         jLabel3.setText("이름 :");
 
-        jLabel4.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel4.setText("CNIC:");
-
-        jLabel5.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel5.setFont(new java.awt.Font("NanumGothic", 1, 14)); // NOI18N
         jLabel5.setText("전화번호 : ");
 
-        jLabel6.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel6.setText("Emal:");
+        jLabel6.setFont(new java.awt.Font("NanumGothic", 1, 14)); // NOI18N
+        jLabel6.setText("Email:");
 
-        jLabel7.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel7.setText("Date of Birth:");
+        jLabel7.setFont(new java.awt.Font("NanumGothic", 1, 14)); // NOI18N
+        jLabel7.setText("생년 월일:");
 
-        jLabel8.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel8.setText("Emergence Name:");
+        jLabel10.setFont(new java.awt.Font("NanumGothic", 1, 14)); // NOI18N
+        jLabel10.setText("주소:");
 
-        jLabel9.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel9.setText("Emergence Phone:");
+        jLabel11.setFont(new java.awt.Font("NanumGothic", 1, 14)); // NOI18N
+        jLabel11.setText("급여:");
 
-        jLabel10.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel10.setText("Post:");
-
-        jLabel11.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel11.setText("Salary:");
-
-        jLabel12.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel12.setText("Date of Hiring:");
+        jLabel12.setFont(new java.awt.Font("NanumGothic", 1, 14)); // NOI18N
+        jLabel12.setText("입사 날짜:");
 
         idTextField.setEditable(false);
         idTextField.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
