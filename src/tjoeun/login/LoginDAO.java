@@ -1,4 +1,4 @@
-package tjoeun.DataConnection;
+package tjoeun.login;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -8,9 +8,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.apache.commons.dbcp2.BasicDataSource;
-
-
-import tjoeun.login.Login_1;
 
 public class LoginDAO {
 BasicDataSource ds;

@@ -16,7 +16,6 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 
 import tjoeun.DataConnection.ConnectionClass;
-import tjoeun.DataConnection.LoginDAO;
 /**
  * This class is written to handle the methods of class Login_1.
  * @version 1.10 25 Aug 2017
