@@ -53,9 +53,9 @@ public class SearchEmployee extends javax.swing.JPanel {
         jLabel1.setText("사원 정보 검색");
         jLabel1.setToolTipText("");
 
-        searchTextField.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
+        searchTextField.setFont(new java.awt.Font("NanumGothic", 1, 24)); // NOI18N
         searchTextField.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        searchTextField.setText("Search");
+        searchTextField.setText("검색 창");
         searchTextField.addFocusListener(new java.awt.event.FocusAdapter() {
             public void focusGained(java.awt.event.FocusEvent evt) {
                 searchTextFieldFocusGained(evt);
