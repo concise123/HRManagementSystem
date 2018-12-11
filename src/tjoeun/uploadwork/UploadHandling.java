@@ -57,7 +57,7 @@ public class UploadHandling {
         uniqueCheck(up);
        ConnectionClass.query("Insert into uploadwork ( id, description, upload_date, developer_name, designer_name, game_link)\n" + "values ( "+up.getIdGame()+ 
                ",'"+ up.getGameDescription()+"', '"
-               + up.getUploadDate()+"','" + up.getDeveloperName()+ "', '" +up.getDesignerName()+"', '" + up.getGameLink() + "' );");
+               + up.getUploadDate()+"','" + up.getDeveloperName()+ "', '" +up.getDesignerName()+"', '" + up.getGameLink() + "' )");
        upload.add(up);
        
         }catch(IllegalArgumentException e){
@@ -80,7 +80,7 @@ public class UploadHandling {
        try {
        load();
              
-       ConnectionClass.query("DELETE FROM uploadwork WHERE id = "+ up.getIdGame()+ ";");
+       ConnectionClass.query("DELETE FROM uploadwork WHERE id = "+ up.getIdGame());
       
        }catch(Exception e)
        {
@@ -125,7 +125,7 @@ public class UploadHandling {
      
        ConnectionClass.query("UPDATE uploadwork SET description = '" + up.getGameDescription()+ "', upload_date = '"+ up.getUploadDate()+
                "', developer_date = '"+ up.getDeveloperName() + "', designer_name = '" + up.getDesignerName() + "', game_link = '" + up.getGameLink()
-               + " ' WHERE id = " + up.getIdGame() +" ;");
+               + " ' WHERE id = " + up.getIdGame() );
        
        }catch(Exception e)
        {

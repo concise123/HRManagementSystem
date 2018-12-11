@@ -28,7 +28,7 @@ public class SalarySlipClass {
     private double netSalary;
 
     /* Constructor */
-    public SalarySlipClass(int id, String name, String post, String monthName, int totalWorkingDays, double advance, double deduction, double netSalary ,String date) {
+    public SalarySlipClass(int id, String name, String post, String monthName, int totalWorkingDays, double advance, double deduction, double netSalary ,String dt) {
         setId(id);
         setName(name);
         setPost(post);

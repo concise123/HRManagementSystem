@@ -1,14 +1,3 @@
-/*
- * %W% %E% Hamza Yasin
- *
- * Copyright (c) 2017-2018 Miranz Technology. All Rights Reserved.
- *
- * This software is the confidential and proprietary information of Miranz
- * technology. You shall not disclose such Confidential Information and 
- * shall use it only in accordance with the terms of the license agreement 
- * you entered into with Miranz.
- *
- */
 package tjoeun.dailywork;
 
 import java.sql.ResultSet;
@@ -16,12 +5,6 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 
 import tjoeun.DataConnection.ConnectionClass;
-
-/**
- * This class is written to handle the methods of class DailyTask.
- * @version 1.10 25 Aug 2017
- * @author Hamza Yasin
- */
 
 public class DailyTaskHandling {
    
@@ -56,7 +39,7 @@ public class DailyTaskHandling {
                  + dt.getAttndnc()+"', '"
                  +dt.getWork()+"', '"
                  +dt.getAssignDate()+"', '"
-                 +dt.getAssignStatus()+"');");
+                 +dt.getAssignStatus()+"')");
          dailylist.add(dt);
          }catch(IllegalArgumentException e){
              e.getMessage();
@@ -68,7 +51,7 @@ public class DailyTaskHandling {
    {
        try {
        Load();    
-       ConnectionClass.query("DELETE FROM dailwork WHERE sr = "+ dt.getId() + ";");
+       ConnectionClass.query("DELETE FROM dailwork WHERE sr = "+ dt.getId() );
        }catch(Exception e)
        {
         throw new IllegalArgumentException(e.getMessage());
@@ -80,7 +63,7 @@ public class DailyTaskHandling {
        try {
        Load();
        for (int i = 0; i< dailylist.size(); i++){
-       ConnectionClass.query("DELETE FROM personalinfo WHERE sr = "+ dailylist.get(i).getId() + ";");
+       ConnectionClass.query("DELETE FROM personalinfo WHERE sr = "+ dailylist.get(i).getId() );
        }
        }catch(Exception e)
        {
@@ -107,7 +90,7 @@ public class DailyTaskHandling {
                + "',work = '"
                + dt.getWork() 
                + "'WHERE sr = " 
-               + dt.getId() +" ;");
+               + dt.getId() );
        }catch(Exception e)
        {
           throw new IllegalArgumentException(e.getMessage());

@@ -101,7 +101,7 @@ public class LoginHandling {
        ConnectionClass.query("Insert into gms.login (srno, id, pass, question, answer, name, status, date_time)\n" + "values ( "+login.getSr()+ 
                ", '"+ login.getLogin()+"', '"
                + login.getPassword()+"','" + login.getQuestion()+ "', '" +login.getAnswer()+"', '" + login.getName()+"' , '"
-               + login.getStatus()+ "','Not Available' );");
+               + login.getStatus()+ "','Not Available' )");
        loginList.add(login);
        
         }catch(IllegalArgumentException e){
@@ -132,7 +132,7 @@ public class LoginHandling {
        try {
        load();
              
-       ConnectionClass.query("DELETE FROM login WHERE id = "+srno+ ";");
+       ConnectionClass.query("DELETE FROM login WHERE id = "+srno);
        for(int i=0; i<loginList.size(); i++)
            if(srno == loginList.get(i).getSr())
            {
@@ -151,7 +151,7 @@ public class LoginHandling {
        try {
        load();
              
-       ConnectionClass.query("DELETE FROM login WHERE id = '"+ username+ "';");
+       ConnectionClass.query("DELETE FROM login WHERE id = '"+ username+ "'");
        }catch(Exception e)
        {
             throw new IllegalArgumentException(e.getMessage());
@@ -206,7 +206,7 @@ public class LoginHandling {
        if(!chk){
            throw new IllegalArgumentException("Please Enter Correct Information.");
        }
-       ConnectionClass.query("UPDATE login SET pass = '"+ newPassword+ "' WHERE id = '" + userName+"' ;");
+       ConnectionClass.query("UPDATE login SET pass = '"+ newPassword+ "' WHERE id = '" + userName+"' ");
            
        }catch(IllegalArgumentException e)
        {

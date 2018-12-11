@@ -1,20 +1,6 @@
-/*
- * %W% %E% Hamza Yasin
- *
- * Copyright (c) 2017-2018 Miranz Technology. All Rights Reserved.
- *
- * This software is the confidential and proprietary information of Miranz
- * technology. You shall not disclose such Confidential Information and 
- * shall use it only in accordance with the terms of the license agreement 
- * you entered into with Miranz.
- *
- */
 package tjoeun.dailywork;
 
-/**
- * @version 1.10 25 Aug 2017
- * @author Hamza Yasin
- */
+
 public class DailyTask {
     private int id;
     private String attndnc;
