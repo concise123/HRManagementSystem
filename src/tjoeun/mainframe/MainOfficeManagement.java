@@ -165,7 +165,7 @@ public class MainOfficeManagement extends javax.swing.JFrame {
         });
 
         workButton.setBackground(new java.awt.Color(255, 255, 255));
-        workButton.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        workButton.setFont(new java.awt.Font("NanumGothic", 0, 18)); // NOI18N
         workButton.setText("일일 업무");
         workButton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         workButton.addActionListener(new java.awt.event.ActionListener() {
@@ -175,7 +175,7 @@ public class MainOfficeManagement extends javax.swing.JFrame {
         });
 
         salarySlipsButton.setBackground(new java.awt.Color(255, 255, 255));
-        salarySlipsButton.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        salarySlipsButton.setFont(new java.awt.Font("NanumGothic", 0, 18)); // NOI18N
         salarySlipsButton.setText("급여 계산기");
         salarySlipsButton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         salarySlipsButton.addActionListener(new java.awt.event.ActionListener() {
