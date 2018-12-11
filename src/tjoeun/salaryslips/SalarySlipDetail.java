@@ -69,12 +69,12 @@ public class SalarySlipDetail extends javax.swing.JDialog {
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/tjoeun/images/1.png"))); // NOI18N
 
         jLabel2.setFont(new java.awt.Font("Sitka Small", 1, 40)); // NOI18N
-        jLabel2.setText("GAME MARK STUDIO");
+        jLabel2.setText("Tjoeun HR Management System");
 
         jLabel3.setFont(new java.awt.Font("NanumGothic", 1, 18)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(0, 102, 204));
         jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel3.setText("Auto Generated Salary Details");
+        jLabel3.setText("자동 생성 급여 명세서");
 
         jLabel4.setFont(new java.awt.Font("NanumGothic", 1, 14)); // NOI18N
         jLabel4.setText("사번 :");
