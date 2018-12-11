@@ -145,8 +145,8 @@ public class MainOfficeManagement extends javax.swing.JFrame {
         jPanel2.setBackground(new java.awt.Color(255, 255, 255));
 
         newEmployeeButton.setBackground(new java.awt.Color(255, 255, 255));
-        newEmployeeButton.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        newEmployeeButton.setText("New Employee");
+        newEmployeeButton.setFont(new java.awt.Font("NanumGothic", 0, 18)); // NOI18N
+        newEmployeeButton.setText("사원 등록");
         newEmployeeButton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         newEmployeeButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -155,8 +155,8 @@ public class MainOfficeManagement extends javax.swing.JFrame {
         });
 
         searchEmployeeButton.setBackground(new java.awt.Color(255, 255, 255));
-        searchEmployeeButton.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        searchEmployeeButton.setText("Search Employee");
+        searchEmployeeButton.setFont(new java.awt.Font("NanumGothic", 0, 18)); // NOI18N
+        searchEmployeeButton.setText("사원 검색");
         searchEmployeeButton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         searchEmployeeButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -185,8 +185,8 @@ public class MainOfficeManagement extends javax.swing.JFrame {
         });
 
         updateButton.setBackground(new java.awt.Color(255, 255, 255));
-        updateButton.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        updateButton.setText("Update");
+        updateButton.setFont(new java.awt.Font("NanumGothic", 0, 18)); // NOI18N
+        updateButton.setText("사원정보관리");
         updateButton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         updateButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
