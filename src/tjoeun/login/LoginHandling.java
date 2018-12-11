@@ -16,6 +16,7 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 
 import tjoeun.DataConnection.ConnectionClass;
+import tjoeun.DataConnection.LoginDAO;
 /**
  * This class is written to handle the methods of class Login_1.
  * @version 1.10 25 Aug 2017
@@ -24,27 +25,14 @@ import tjoeun.DataConnection.ConnectionClass;
 public class LoginHandling {
     
    private static ArrayList<Login_1> loginList = new ArrayList();
+   private static LoginDAO dao = new LoginDAO();
     /* Loading the data from database*/   
    public static boolean load()
    {
        if (!loginList.isEmpty())
             return false;
-        
-        ResultSet resultSet = ConnectionClass.selectQuery(" SELECT * FROM login ");
-        
-        if(resultSet == null)
-            return false;
-        
-         try{
-            while(resultSet.next()){
-                
-              loginList.add(new Login_1(Integer.parseInt(resultSet.getObject(1).toString()),resultSet.getObject(2).toString(),
-                      resultSet.getObject(3).toString(),resultSet.getObject(4).toString(), resultSet.getObject(5).toString(), 
-                      resultSet.getObject(6).toString(), resultSet.getObject(7).toString(), resultSet.getObject(8).toString()));
-            }
-            System.out.println("loaded with size of " + loginList.size());
-        }catch(SQLException e){
-        }
+       loginList = dao.select();
+       
        return true;
    }
    /* Generating the unique Login ID*/
