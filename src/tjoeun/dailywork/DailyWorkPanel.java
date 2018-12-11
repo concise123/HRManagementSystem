@@ -49,40 +49,40 @@ public class DailyWorkPanel extends javax.swing.JPanel {
         jButton1 = new javax.swing.JButton();
         clearButton = new javax.swing.JButton();
 
-        jLabel2.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("NanumGothic", 1, 14)); // NOI18N
         jLabel2.setText("ID: ");
 
         setBackground(new java.awt.Color(255, 255, 255));
 
-        jLabel1.setFont(new java.awt.Font("Tahoma", 1, 20)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("NanumGothic", 1, 20)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(0, 102, 204));
-        jLabel1.setText("Daily Work");
+        jLabel1.setText("일일 업무 관리");
         jLabel1.setToolTipText("");
 
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/tjoeun/images/animation-employee.gif"))); // NOI18N
 
-        jLabel4.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel4.setText("ID: ");
+        jLabel4.setFont(new java.awt.Font("NanumGothic", 1, 14)); // NOI18N
+        jLabel4.setText("사번 : ");
 
-        idTextField.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        idTextField.setFont(new java.awt.Font("NanumGothic", 0, 14)); // NOI18N
         idTextField.setHorizontalAlignment(javax.swing.JTextField.CENTER);
 
-        jLabel5.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel5.setText("Attendence:");
+        jLabel5.setFont(new java.awt.Font("NanumGothic", 1, 14)); // NOI18N
+        jLabel5.setText("출석 :");
 
-        attendenceTextField.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        attendenceTextField.setFont(new java.awt.Font("NanumGothic", 0, 14)); // NOI18N
         attendenceTextField.setHorizontalAlignment(javax.swing.JTextField.CENTER);
 
-        jLabel6.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel6.setText("Daily Work:");
+        jLabel6.setFont(new java.awt.Font("NanumGothic", 1, 14)); // NOI18N
+        jLabel6.setText("일일 업무 내용 :");
 
-        workTextPane.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        workTextPane.setFont(new java.awt.Font("NanumGothic", 0, 14)); // NOI18N
         jScrollPane1.setViewportView(workTextPane);
 
         jButton1.setBackground(new java.awt.Color(255, 255, 255));
-        jButton1.setFont(new java.awt.Font("Tahoma", 1, 17)); // NOI18N
+        jButton1.setFont(new java.awt.Font("NanumGothic", 1, 17)); // NOI18N
         jButton1.setForeground(new java.awt.Color(0, 102, 0));
-        jButton1.setText("Submit");
+        jButton1.setText("등록");
         jButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -91,9 +91,9 @@ public class DailyWorkPanel extends javax.swing.JPanel {
         });
 
         clearButton.setBackground(new java.awt.Color(255, 255, 255));
-        clearButton.setFont(new java.awt.Font("Tahoma", 1, 17)); // NOI18N
+        clearButton.setFont(new java.awt.Font("NanumGothic", 1, 17)); // NOI18N
         clearButton.setForeground(new java.awt.Color(153, 0, 0));
-        clearButton.setText("Clear");
+        clearButton.setText("초기화");
         clearButton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         clearButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -173,9 +173,9 @@ public class DailyWorkPanel extends javax.swing.JPanel {
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
        try{          
             DailyTaskHandling.Save(getData());
-            JOptionPane.showMessageDialog(null, "Daily Work Posted");
+            JOptionPane.showMessageDialog(null, "일일 업무가 등록 되었습니다");
        }catch(HeadlessException e){
-           JOptionPane.showMessageDialog(null, "Not Posted. " + e.getMessage());
+           JOptionPane.showMessageDialog(null, "일일 업무가 등록에 오류가 있습니다 " + e.getMessage());
         }
     }//GEN-LAST:event_jButton1ActionPerformed
 
