@@ -1,21 +1,7 @@
-/*
- * %W% %E% Hamza Yasin
- *
- * Copyright (c) 2017-2018 Miranz Technology. All Rights Reserved.
- *
- * This software is the confidential and proprietary information of Miranz
- * technology. You shall not disclose such Confidential Information and 
- * shall use it only in accordance with the terms of the license agreement 
- * you entered into with Miranz.
- *
- */
 package tjoeun.salaryslips;
 
 import tjoeun.update.updatesalaryslips.SalarySlipClass;
-/**
- * @version 1.10 25 Aug 2017
- * @author Hamza Yasin
- */
+
 public class SalarySlipDetail extends javax.swing.JDialog {
 
     /**
@@ -85,76 +71,76 @@ public class SalarySlipDetail extends javax.swing.JDialog {
         jLabel2.setFont(new java.awt.Font("Sitka Small", 1, 40)); // NOI18N
         jLabel2.setText("GAME MARK STUDIO");
 
-        jLabel3.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("NanumGothic", 1, 18)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(0, 102, 204));
         jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel3.setText("Auto Generated Salary Details");
 
-        jLabel4.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel4.setText("ID:");
+        jLabel4.setFont(new java.awt.Font("NanumGothic", 1, 14)); // NOI18N
+        jLabel4.setText("사번 :");
 
-        jLabel5.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel5.setText("Name:");
+        jLabel5.setFont(new java.awt.Font("NanumGothic", 1, 14)); // NOI18N
+        jLabel5.setText("이름 :");
 
-        jLabel6.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel6.setText("Position:");
+        jLabel6.setFont(new java.awt.Font("NanumGothic", 1, 14)); // NOI18N
+        jLabel6.setText("직책 :");
 
-        jLabel7.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel7.setText("Salary Month:");
+        jLabel7.setFont(new java.awt.Font("NanumGothic", 1, 14)); // NOI18N
+        jLabel7.setText("급여 월 :");
 
-        jLabel8.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel8.setText("Working Days:");
+        jLabel8.setFont(new java.awt.Font("NanumGothic", 1, 14)); // NOI18N
+        jLabel8.setText("작업 일수 :");
 
-        jLabel9.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel9.setText("Advance:");
+        jLabel9.setFont(new java.awt.Font("NanumGothic", 1, 14)); // NOI18N
+        jLabel9.setText("가불 :");
 
-        jLabel10.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel10.setText("Deduction:");
+        jLabel10.setFont(new java.awt.Font("NanumGothic", 1, 14)); // NOI18N
+        jLabel10.setText("공제 :");
 
-        jLabel11.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel11.setText("Net Salary:");
+        jLabel11.setFont(new java.awt.Font("NanumGothic", 1, 14)); // NOI18N
+        jLabel11.setText("연봉 :");
 
-        jLabel12.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel12.setText("Issue Date:");
+        jLabel12.setFont(new java.awt.Font("NanumGothic", 1, 14)); // NOI18N
+        jLabel12.setText("발행일 :");
 
-        idLabel.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        idLabel.setText("Issue Date:");
+        idLabel.setFont(new java.awt.Font("NanumGothic", 0, 14)); // NOI18N
+        idLabel.setText("발행일 :");
 
-        nameLabel.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        nameLabel.setText("Issue Date:");
+        nameLabel.setFont(new java.awt.Font("NanumGothic", 0, 14)); // NOI18N
+        nameLabel.setText("발행일 :");
 
-        positionLabel.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        positionLabel.setText("Issue Date:");
+        positionLabel.setFont(new java.awt.Font("NanumGothic", 0, 14)); // NOI18N
+        positionLabel.setText("발행일 :");
 
-        salaryMonthLabel.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        salaryMonthLabel.setText("Issue Date:");
+        salaryMonthLabel.setFont(new java.awt.Font("NanumGothic", 0, 14)); // NOI18N
+        salaryMonthLabel.setText("발행일 :");
 
-        workingDaysLabel.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        workingDaysLabel.setText("Issue Date:");
+        workingDaysLabel.setFont(new java.awt.Font("NanumGothic", 0, 14)); // NOI18N
+        workingDaysLabel.setText("발행일 :");
 
-        advanceLabel.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        advanceLabel.setText("Issue Date:");
+        advanceLabel.setFont(new java.awt.Font("NanumGothic", 0, 14)); // NOI18N
+        advanceLabel.setText("발행일 :");
 
-        deductionLabel.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        deductionLabel.setText("Issue Date:");
+        deductionLabel.setFont(new java.awt.Font("NanumGothic", 0, 14)); // NOI18N
+        deductionLabel.setText("발행일 :");
 
-        netSalaryLabel.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        netSalaryLabel.setText("Issue Date:");
+        netSalaryLabel.setFont(new java.awt.Font("NanumGothic", 0, 14)); // NOI18N
+        netSalaryLabel.setText("발행일 :");
 
-        issueDateLabel.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        issueDateLabel.setText("Issue Date:");
+        issueDateLabel.setFont(new java.awt.Font("NanumGothic", 0, 14)); // NOI18N
+        issueDateLabel.setText("발행일 :");
 
-        totalAmountLabel.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        totalAmountLabel.setFont(new java.awt.Font("NanumGothic", 1, 18)); // NOI18N
         totalAmountLabel.setForeground(new java.awt.Color(0, 102, 0));
         totalAmountLabel.setText("Rs/10000000");
 
-        jLabel23.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        jLabel23.setFont(new java.awt.Font("NanumGothic", 1, 18)); // NOI18N
         jLabel23.setForeground(new java.awt.Color(0, 102, 0));
-        jLabel23.setText("Total Amount:");
+        jLabel23.setText("실수령 금액 :");
 
         closeButton.setBackground(new java.awt.Color(255, 255, 255));
-        closeButton.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        closeButton.setText("Close");
+        closeButton.setFont(new java.awt.Font("NanumGothic", 0, 18)); // NOI18N
+        closeButton.setText("닫기");
         closeButton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         closeButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

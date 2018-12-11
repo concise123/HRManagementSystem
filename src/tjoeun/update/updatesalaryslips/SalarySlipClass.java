@@ -1,19 +1,4 @@
-/*
- * %W% %E% Hamza Yasin
- *
- * Copyright (c) 2017-2018 Miranz Technology. All Rights Reserved.
- *
- * This software is the confidential and proprietary information of Miranz
- * technology. You shall not disclose such Confidential Information and 
- * shall use it only in accordance with the terms of the license agreement 
- * you entered into with Miranz.
- *
- */
 package tjoeun.update.updatesalaryslips;
-/*
- * @version 1.10 25 Aug 2017
- * @author Hamza Yasin
- */
 
 public class SalarySlipClass {
     
@@ -88,22 +73,33 @@ public class SalarySlipClass {
     }
 
     public boolean setAdvance(double advance) {
-        if (advance > 0)
-        this.advance = advance;
-        else{
-            this.advance = advance *-1;
-            throw new IllegalArgumentException("Advance must be in positive integers.");
+    	if (advance == 0) {
+    		this.advance = 0;
+    	} else {
+    	
+	       if (advance > 0)
+	        	this.advance = advance;
+	       else{
+	            this.advance = advance *-1;
+	            throw new IllegalArgumentException("Advance must be in positive integers.");
+	            
+	       }
        }
         return true;
     }
 
     public boolean setDeduction(double deduction) {
-        if (deduction > 0)
-        this.deduction = deduction;
-        else {
-            this.deduction = deduction *-1;
-            throw new IllegalArgumentException("Deduction must be in positive integers.");
-        }
+    	
+    	if (deduction == 0) {
+    		this.deduction = 0;
+    	} else {
+	        if (deduction > 0)
+	        this.deduction = deduction;
+	        else {
+	            this.deduction = deduction *-1;
+	            throw new IllegalArgumentException("Deduction must be in positive integers.");
+	        }
+    	}
         return true;
     }
 

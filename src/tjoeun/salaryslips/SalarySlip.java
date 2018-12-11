@@ -1,14 +1,3 @@
-/*
- * %W% %E% Hamza Yasin
- *
- * Copyright (c) 2017-2018 Miranz Technology. All Rights Reserved.
- *
- * This software is the confidential and proprietary information of Miranz
- * technology. You shall not disclose such Confidential Information and 
- * shall use it only in accordance with the terms of the license agreement 
- * you entered into with Miranz.
- *
- */
 package tjoeun.salaryslips;
 
 import javax.swing.JOptionPane;
@@ -16,10 +5,6 @@ import javax.swing.JOptionPane;
 import tjoeun.update.updatesalaryslips.SalaryHandling;
 import tjoeun.update.updatesalaryslips.SalarySlipClass;
 
-/**
- * @version 1.10 25 Aug 2017
- * @author Hamza Yasin
- */
 public class SalarySlip extends javax.swing.JPanel {
 
     /**
@@ -54,36 +39,36 @@ public class SalarySlip extends javax.swing.JPanel {
 
         setBackground(new java.awt.Color(255, 255, 255));
 
-        jLabel1.setFont(new java.awt.Font("Tahoma", 1, 20)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("NanumGothic", 1, 20)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(0, 102, 204));
-        jLabel1.setText("Salary Slips");
+        jLabel1.setText("급여명세 관리");
         jLabel1.setToolTipText("");
 
-        jLabel4.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel4.setText("ID: ");
+        jLabel4.setFont(new java.awt.Font("NanumGothic", 1, 14)); // NOI18N
+        jLabel4.setText("사번 : ");
 
-        idTextField.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        idTextField.setFont(new java.awt.Font("NanumGothic", 0, 14)); // NOI18N
         idTextField.setHorizontalAlignment(javax.swing.JTextField.CENTER);
 
-        jLabel5.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel5.setText("Days:");
+        jLabel5.setFont(new java.awt.Font("NanumGothic", 1, 14)); // NOI18N
+        jLabel5.setText("작업일 : ");
 
-        jLabel6.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel6.setText("Advance:");
+        jLabel6.setFont(new java.awt.Font("NanumGothic", 1, 14)); // NOI18N
+        jLabel6.setText("가불 : ");
 
-        advanceTextField.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        advanceTextField.setFont(new java.awt.Font("NanumGothic", 0, 14)); // NOI18N
         advanceTextField.setHorizontalAlignment(javax.swing.JTextField.CENTER);
 
-        jLabel7.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel7.setText("Deduction:");
+        jLabel7.setFont(new java.awt.Font("NanumGothic", 1, 14)); // NOI18N
+        jLabel7.setText("공제 :");
 
-        deductionTextField.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        deductionTextField.setFont(new java.awt.Font("NanumGothic", 0, 14)); // NOI18N
         deductionTextField.setHorizontalAlignment(javax.swing.JTextField.CENTER);
 
         generateSlipButton.setBackground(new java.awt.Color(255, 255, 255));
-        generateSlipButton.setFont(new java.awt.Font("Tahoma", 1, 22)); // NOI18N
+        generateSlipButton.setFont(new java.awt.Font("NanumGothic", 1, 22)); // NOI18N
         generateSlipButton.setForeground(new java.awt.Color(0, 102, 0));
-        generateSlipButton.setText("Generate Slip");
+        generateSlipButton.setText("급여명세 생성");
         generateSlipButton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         generateSlipButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -93,14 +78,14 @@ public class SalarySlip extends javax.swing.JPanel {
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/tjoeun/images/Animated-American-Money-Falling-Into-a-Pile.jpg"))); // NOI18N
 
-        jLabel8.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel8.setText("Salary Month:");
+        jLabel8.setFont(new java.awt.Font("NanumGothic", 1, 14)); // NOI18N
+        jLabel8.setText("급여 월:");
 
-        salaryMonth.setFont(new java.awt.Font("Tahoma", 0, 13)); // NOI18N
+        salaryMonth.setFont(new java.awt.Font("NanumGothic", 0, 13)); // NOI18N
         salaryMonth.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Jan", "Feb", "Mar", "Aprl", "May", "Jun", "Jul", "Aug", "Sept", "Oct", "Nov", "Dec" }));
         salaryMonth.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
-        salaryDays.setFont(new java.awt.Font("Tahoma", 0, 13)); // NOI18N
+        salaryDays.setFont(new java.awt.Font("NanumGothic", 0, 13)); // NOI18N
         salaryDays.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31" }));
         salaryDays.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
