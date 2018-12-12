@@ -37,7 +37,7 @@ public class MainOfficeManagement extends javax.swing.JFrame {
         this.login = login;
         initComponents();
         loadPanels();
-        usernameLabel.setText("Username: "+userName);
+        usernameLabel.setText("아이디: "+userName);
         fontPanel.setVisible(true);
     }
 
@@ -133,14 +133,14 @@ public class MainOfficeManagement extends javax.swing.JFrame {
             }
         });
 
-        jLabel3.setFont(new java.awt.Font("Verdana", 1, 40)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("NanumGothic", 1, 40)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(0, 102, 204));
         jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel3.setText(" GAME MARK STUDIO ");
+        jLabel3.setText(" 더조은 HRMS ");
 
-        usernameLabel.setFont(new java.awt.Font("Tahoma", 0, 16)); // NOI18N
+        usernameLabel.setFont(new java.awt.Font("NanumGothic", 0, 16)); // NOI18N
         usernameLabel.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        usernameLabel.setText("Username_Here");
+        usernameLabel.setText("");
 
         jPanel2.setBackground(new java.awt.Color(255, 255, 255));
 
